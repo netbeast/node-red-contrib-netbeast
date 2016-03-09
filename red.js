@@ -26,6 +26,11 @@ var path = require("path");
 var fs = require("fs-extra");
 var RED = require("./red/red.js");
 
+var cmd = require('commander')
+cmd
+  .option('-p, --port <n>', 'Port to start the HTTP server', parseInt)
+  .parse(process.argv)
+
 var server;
 var app = express();
 
@@ -157,7 +162,7 @@ if (settings.httpNodeRoot !== false) {
     settings.httpNodeAuth = settings.httpNodeAuth || settings.httpAuth;
 }
 
-settings.uiPort = parsedArgs.port||settings.uiPort||1880;
+settings.uiPort = cmd.port||1880;
 settings.uiHost = settings.uiHost||"0.0.0.0";
 
 if (flowFile) {
