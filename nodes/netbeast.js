@@ -23,11 +23,11 @@ module.exports = function (RED) {
     this.on('input', function (msg) {
       if (msg.topic === 'lights') {
         if (msg.payload === 'on') {
-          msg.payload = 'Turning lights on, color = FF0080'
-          beast('lights').set({power: 'on', color: '#FF0080'})
+          msg.payload = 'Turning lights on'
+          beast('lights').set({power: true})
         } else if (msg.payload === 'off') {
           msg.payload = 'Turning lights off'
-          beast('lights').set({power: 'off'})
+          beast('lights').set({power: false})
         } else {
           msg.payload = 'Payload must be on or off'
         }
