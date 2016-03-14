@@ -27,7 +27,7 @@ module.exports = function (RED) {
           beast('lights').set({power: true})
         } else if (msg.payload === 'off') {
           msg.payload = 'Turning lights off'
-          beast('lights').set({power: false})
+          beast('lights').set({power: false}) // Don't use 'off'
         } else {
           msg.payload = 'Payload must be on or off'
         }
