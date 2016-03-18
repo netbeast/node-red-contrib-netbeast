@@ -42,5 +42,6 @@
 </script>
 
 <script type="text/x-red" data-help-name="netbeast">
-    <p>A node for netbeast api. Expects a <b>msg.payload</b> with on/off and <b>msg.topic</b> with lights/music. You can choose your topic and what action you want to do on that topic.</p>
+    <p>A node for Netbeast api. This node needs an <b>inject</b> node as input and a <b>debug</b> node as output, so you can check what you're sending. It expects a <b>JSON msg.payload</b> with the complete JSON object including the actions you want to do and <b>msg.topic</b> with the topic where you want to make that actions. You can choose your topic and what action you want to do on that topic.
+    For example, you can choose the topic <b>lights</b> and use this arguments: <b>{"power": "on", "color": "#FF0080"}</b>. For full info about topics and arguments, have a look at Netbeast api: <b>https://github.com/netbeast/api</b></p>
 </script>
