@@ -46,7 +46,7 @@ Here you can install the application by two ways: exploring all available apps o
 
 After installing the app you will be able to run it from the **Apps** section in your dashboard.
 
-If you want to know how to do this, go to this useful guide [netbeast docs](http://docs.netbeast.co/chapters/get_started/get_started_from_your_laptop.html)
+If you want to know how to do this, go to this useful guide [netbeast docs](http://docs.netbeast.co/chapters/creating_an_application/install_it_on_the_dashboard.html)
 
 
 ## Netbeast API module
