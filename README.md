@@ -10,43 +10,51 @@ Netbeast has included this tool as an application. So you can install that tool 
 
 If you want to know more about Node-red visit its [website](http://nodered.org) where you will find all the documentation available.
 
-* [Install on the Netbeast Dashboard](#Dashboard)
 * [Install Locally](#Local)
-
-<a name="Dashboard">
-## Netbeast Dashboard
-
-Netbeast has included the [node-red tool](http://nodered.org) as an application for its dashboard. So, if you want to get it, you only need to access to the [market](http://market.netbeast.co/#/), download the application and install it on the **Dashboard**
-
-If you want to know how to do this, go to this useful guide [netbeast docs](http://docs.netbeast.co)
-
+* [Install on the Netbeast Dashboard](#Dashboard)
 
 <a name="Local">
 ## Local Installation
 
 The purpose of the local installation is allow developers to create modules which will be on the node-red app for the **Netbeast dashboard**
 
-### Download
-
-Access to the [MarketPlace](https://market.netbeast.co/#/)
-
-If you don't have an account, request an access. After that, log in and download the Netbeast-Red App.
-
-Once you have downloaded the application, uncompress it.
-
-Go to the source files directory through your terminal. Then type 
+To install it locally, you just need to clone this repository
+```
+git clone https://github.com/netbeast/beast-red.git
+```
+Then go to the directory that has been created when cloning the repository
+```
+cd beast-red
+```
+Install all dependencies needed by using npm
+```
+npm install
+```
+Finally run node-red
 ```
 node red.js --port 3000
 ```
+Node red will start running on port 3000. If you want to select another port change the --port Number. And if you don't use the --port option, it will start running on port 1880.
 
-Node red will start running on port 3000. If you want to select another port change the --port Number
+<a name="Dashboard">
+## Netbeast Dashboard
+
+Netbeast has included the [node-red tool](http://nodered.org) as an application for its dashboard. So, if you want to get it, you only need to access to the **Install** section in the **Dashboard**.
+Here you can install the application by two ways: exploring all available apps or downloading from git.
+* **From explore**: look for the beast-red application and push the Install button. This will download the application in your dashboard.
+* **From git**: paste this repo URL and it will start the download. 
+
+After installing the app you will be able to run it from the **Apps** section in your dashboard.
+
+If you want to know how to do this, go to this useful guide [netbeast docs](http://docs.netbeast.co/chapters/creating_an_application/install_it_on_the_dashboard.html)
+
 
 ## Netbeast API module
 We have added a new module to integrate the Netbeast api. It has been developed by Netbeast Team.
 
-If you want to use this module, you only need to copy [netbeast.html](nodes/netbeast.html) and [netbeast.js](nodes/netbeast.js) files, that are located in the nodes directory, in your own nodes directory.
+Have a look at [Netbeast api](http://github.com/netbeast/api) for full information about available topics and arguments.
 
-* Finally, start node-red and go to the browser. If all went fine, you will have a new module called "netbeast" and you will be able to configure node-red to control your devices using Netbeast.
+If you have followed this installation guide (locally or on dashboard) now you only have to start node-red and go to the browser if you installed it locally or run the beast-red app in the dashboard. If all went fine, you will have a new module called **"netbeast"** and you will be able to configure node-red to control your devices using Netbeast.
 
 Here you have the nodes you need to include with the "netbeast" one so it can work propertly.
 
@@ -56,7 +64,6 @@ And here you can see an example of what you should write in the inject node.
 
 ![Using netbeast node: inject](inject_screenshot.png)
 
-Have a look at [Netbeast api](http://github.com/netbeast/api) for full information about available topics and arguments.
 
 ##CONTACT
 
