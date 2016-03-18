@@ -39,15 +39,14 @@ Node red will start running on port 3000. If you want to select another port cha
 <a name="Dashboard">
 ## Netbeast Dashboard
 
-Netbeast has included the [node-red tool](http://nodered.org) as an application for its dashboard. So, if you want to get it, you only need to access to the [market](http://market.netbeast.co/#/), download the application and install it on the **Dashboard**
-Install section in the dashboard. Here you can install the application by two ways: exploring available apps or downloading from git.
-** From explore: look for the beast-red application and push the Install button. This will download the application in your dashboard.
-** From git: paste this repo URL and it will start the download. 
+Netbeast has included the [node-red tool](http://nodered.org) as an application for its dashboard. So, if you want to get it, you only need to access to the **Install** section in the **Dashboard**.
+Here you can install the application by two ways: exploring all available apps or downloading from git.
+* **From explore**: look for the beast-red application and push the Install button. This will download the application in your dashboard.
+* **From git**: paste this repo URL and it will start the download. 
 
-After installing the app you will be able to run it from the Apps section in your dashboard.
+After installing the app you will be able to run it from the **Apps** section in your dashboard.
 
 If you want to know how to do this, go to this useful guide [netbeast docs](http://docs.netbeast.co/chapters/get_started/get_started_from_your_laptop.html)
-
 
 
 ## Netbeast API module
