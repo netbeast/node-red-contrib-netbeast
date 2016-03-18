@@ -54,7 +54,7 @@ We have added a new module to integrate the Netbeast api. It has been developed 
 
 Have a look at [Netbeast api](http://github.com/netbeast/api) for full information about available topics and arguments.
 
-If you have followed this installation guide (locally or on dashboard) now start node-red and go to the browser. If all went fine, you will have a new module called "netbeast" and you will be able to configure node-red to control your devices using Netbeast.
+If you have followed this installation guide (locally or on dashboard) now you only have to start node-red and go to the browser if you installed it locally or run the beast-red app in the dashboard. If all went fine, you will have a new module called **"netbeast"** and you will be able to configure node-red to control your devices using Netbeast.
 
 Here you have the nodes you need to include with the "netbeast" one so it can work propertly.
 
