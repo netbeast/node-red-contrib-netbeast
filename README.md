@@ -44,7 +44,7 @@ Node red will start running on port 3000. If you want to select another port cha
 ## Netbeast API module
 We have added a new module to integrate the Netbeast api. It has been developed by Netbeast Team.
 
-If you want to use this module, you only need to copy netbeast.html and netbeast.js files, that are located in the nodes directory, in your own nodes directory.
+If you want to use this module, you only need to copy [netbeast.html](nodes/netbeast.html) and [netbeast.js](nodes/netbeast.js) files, that are located in the nodes directory, in your own nodes directory.
 
 * Finally, start node-red and go to the browser. If all went fine, you will have a new module called "netbeast" and you will be able to configure node-red to control your devices using Netbeast.
 
