@@ -21,29 +21,7 @@ module.exports = function (RED) {
     RED.nodes.createNode(this, config)
     var node = this
     this.on('input', function (msg) {
-      if (msg.topic === 'lights') {
-        if (msg.payload === 'on') {
-          msg.payload = 'Turning lights on'
-          beast('lights').set({power: true})
-        } else if (msg.payload === 'off') {
-          msg.payload = 'Turning lights off'
-          beast('lights').set({power: false}) // Don't use 'off'
-        } else {
-          msg.payload = 'Payload must be on or off'
-        }
-      } else if (msg.topic === 'music') {
-        if (msg.payload === 'on') {
-          msg.payload = 'Turning music on'
-          beast('music').set({status: 'play'})
-        } else if (msg.payload === 'off') {
-          msg.payload = 'Turning music off'
-          beast('music').set({status: 'stop'})
-        } else {
-          msg.payload = 'Payload must be on or off'
-        }
-      } else {
-        msg.payload = 'Topic must be lights or music'
-      }
+      beast(msg.topic).set(msg.payload)
       node.send(msg)
     })
   }
