@@ -1,12 +1,13 @@
 {
-  "name": "node-red",
-  "version": "0.13.3",
-  "description": "A visual tool for wiring the Internet of Things",
+  "name": "beast-red",
+  "version": "0.1",
+  "description": "A netbeast node for node-red",
   "homepage": "http://nodered.org",
+  "author": "Netbeast",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-red/node-red.git"
+    "url": "https://github.com/netbeast/beast-red"
   },
   "main": "red/red.js",
   "scripts": {
@@ -17,21 +18,13 @@
     "node-red": "./red.js",
     "node-red-pi": "bin/node-red-pi"
   },
-  "contributors": [
-    {
-      "name": "Nick O'Leary"
-    },
-    {
-      "name": "Dave Conway-Jones"
-    }
-  ],
   "keywords": [
-    "editor",
-    "messaging",
+    "netbeast",
+    "node-red",
     "iot",
-    "ibm",
     "flow"
   ],
+  "logo": "node-red.png",
   "dependencies": {
     "basic-auth": "1.0.3",
     "bcryptjs": "2.3.0",
