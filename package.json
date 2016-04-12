@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-netbeast",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Netbeast node for node-red",
   "homepage": "http://github.com/netbeast/node-red-contrib-netbeast",
   "author": "Netbeast",
@@ -12,7 +12,8 @@
     "flow"
   ],
   "dependencies": {
-    "netbeast": "^1.0.5"
+    "netbeast": "^1.0.5",
+    "superagent": "^1.8.3"
   },
   "node-red": {
     "nodes": {
