@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-netbeast",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Netbeast nodes for node-red",
   "homepage": "http://github.com/netbeast/node-red-contrib-netbeast",
   "author": "Netbeast",
