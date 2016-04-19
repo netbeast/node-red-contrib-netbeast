@@ -38,11 +38,11 @@ Have a look at [Netbeast api](http://github.com/netbeast/api) for full informati
 
 Here you have the nodes you need to include with the "netbeast" one so it can work propertly.
 
-![Using netbeast node](nodes_screenshot.png)
+![Using netbeast node](http://github.com/netbeast/node-red-contrib-netbeast/nodes_screenshot.png)
 
 And here you can see an example of what you should write in the inject node.
 
-![Using netbeast node: inject](inject_screenshot.png)
+![Using netbeast node: inject](http://github.com/netbeast/node-red-contrib-netbeast/inject_screenshot.png)
 
 
 ##CONTACT
